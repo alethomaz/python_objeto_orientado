@@ -1,7 +1,9 @@
+# Importando bibliotecas
 from editora import Editora
 from autor import Autor
 from capitulo import Capitulo
 
+#  Criando classe
 class Livro:
 
     def __init__(
@@ -9,7 +11,7 @@ class Livro:
             codigo: int,
             titulo: str,
             ano: int,
-            editora: Editora,
+            editora: Editora, 
             autor : Autor,
             numero_capitulo: int,
             titulo_capitulo: str
