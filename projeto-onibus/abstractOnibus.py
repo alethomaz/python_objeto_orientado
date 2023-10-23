@@ -25,7 +25,7 @@ class AbstractOnibus(ABC):
     @abstractmethod
     def desembarca_pessoa(self) -> str:
         pass
-
+    
     @property
     @abstractmethod
     def capacidade(self) -> int:
