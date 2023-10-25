@@ -7,26 +7,26 @@ class AbstractControladorOnibus(ABC):
     def __init__(self):
         pass
 
-    '''
-    Metodo para ligar o onibus. Se o onibus ja estiver ligado, dispara a excecao
+    
+    #Metodo para ligar o onibus. Se o onibus ja estiver ligado, dispara a excecao
     @return Mensagem informando o que ocorreu com o onibus 
     @throws OnibusJahLigadoException 
-    '''
+    
     @abstractmethod
     def ligar(self) -> str:
         pass
 
-    '''
-    Metodo para desligar o onibus. Se o onibus ja estiver desligado, dispara a excecao
+    
+    #Metodo para desligar o onibus. Se o onibus ja estiver desligado, dispara a excecao
     @return Mensagem informando o que ocorreu com o onibus 
     @throws OnibusJahDesligadoException 
-    '''
+    
     @abstractmethod
     def desligar(self) -> str:
         pass
 
-    '''
-    Um passageiro entra no onibus. Se nao for possivel permitir o embarque, dispara a excecao
+    
+    # Um passageiro entra no onibus. Se nao for possivel permitir o embarque, dispara a excecao
     @return Mensagem informando o que ocorreu com o onibus 
     @throws OnibusJahCheioException 
     '''
